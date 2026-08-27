@@ -1,0 +1,71 @@
+.certificates {
+  padding: 90px 8%;
+  background: #111111;
+  color: white;
+}
+
+.certificates h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.instituicoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.instituicao-card {
+  background: #171717;
+  border: 1px solid #27272a;
+  border-radius: 16px;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.instituicao-card:hover {
+  border-color: #0e3447;
+  transform: translateY(-6px);
+}
+
+.icone {
+  font-size: 42px;
+  color: #78b4d1;
+  margin-bottom: 18px;
+}
+
+.instituicao-card h3 {
+  color: #689eb9;
+  margin-bottom: 8px;
+}
+
+.instituicao-card h4 {
+  color: white;
+  margin-bottom: 14px;
+}
+
+.instituicao-card p {
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+.botao-certificados {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.botao-certificados a {
+  display: inline-block;
+  background: #0e3447;
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.botao-certificados a:hover {
+  background: #0e3447;
+}

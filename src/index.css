@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  /* Fonte principal */
+  font-family: "Poppins", sans-serif;
+
+  /* Paleta de cores (igual ao portfólio antigo) */
+  --background: #06070b;
+  --surface: #11131a;
+  --surface-light: #1a2030;
+
+  --text: #ffffff;
+  --text-secondary: #b8c1d1;
+
+  --primary: #5fa8ff;
+  --primary-light: #8fc5ff;
+  --primary-dark: #2c6fdb;
+
+  --border: rgba(95, 168, 255, 0.15);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* Container padrão para todas as seções */
+section {
+  width: 100%;
+  padding: 90px 8%;
+}
+
+/* Títulos */
+h1 {
+  font-size: clamp(2.8rem, 6vw, 4.3rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Texto pequeno azul */
+.subtitle {
+  color: var(--primary-light);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
