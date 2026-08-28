@@ -1,3 +1,6 @@
+// Caminho base para funcionar no localhost e no GitHub Pages
+const BASE = import.meta.env.BASE_URL;
+
 export type Projeto = {
   id: number;
   titulo: string;
@@ -18,31 +21,32 @@ export const projetos: Projeto[] = [
       "API REST para gerenciamento de uma locadora de carros de luxo.",
     tecnologias: ["Python", "Flask", "SQLite"],
     github: "https://github.com/Magnum2029/luxury-wheels",
-    demo: "https://github.com/Magnum2029/luxury_wheels.git",
-    imagem: "/images/Projeto/luxury-wheels.png",
+    demo: "https://github.com/Magnum2029/luxury_wheels",
+    imagem: `${BASE}imagens/projeto/luxury-wheels.png`,
   },
+
   {
     id: 2,
     titulo: "Portal Viagens",
     categoria: "React",
-    descricao:
-      "Projeto em React para destinos turísticos.",
+    descricao: "Projeto em React para destinos turísticos.",
     tecnologias: ["React", "TypeScript"],
     github: "https://github.com/Magnum2029/portal-viagens",
     demo: "https://portal-viagens.vercel.app",
-    imagem: "/images/Projeto/portal-viagens.png",
+    imagem: `${BASE}imagens/projeto/portal-viagens.png`,
   },
+
   {
     id: 3,
     titulo: "Next Blog IBAC",
     categoria: "Next.js",
-    descricao:
-      "Blog desenvolvido com Next.js 15 e App Router.",
+    descricao: "Blog desenvolvido com Next.js 15 e App Router.",
     tecnologias: ["Next.js", "TypeScript"],
     github: "https://github.com/Magnum2029/next-blog-ibac",
     demo: "https://next-blog-ibac.vercel.app",
-    imagem: "/images/Projeto/next-blog.png",
+    imagem: `${BASE}imagens/projeto/next-blog.png`,
   },
+
   {
     id: 4,
     titulo: "Lista de Tarefas",
@@ -52,6 +56,6 @@ export const projetos: Projeto[] = [
     tecnologias: ["React", "Jest"],
     github: "https://github.com/Magnum2029/next-tarefas-testes",
     demo: "",
-    imagem: "/images/Projeto/tarefas.png",
+    imagem: `${BASE}imagens/projeto/tarefas.png`,
   },
 ];
