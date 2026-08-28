@@ -15,32 +15,32 @@ export const certificados: Certificado[] = [
     id: 1,
     titulo: "Desenvolvedor Full Stack Python",
     instituicao: "EBAC",
-    categoria: "Front-End + Back-End",
+    categoria: "Formação Completa",
     descricao:
-      "Formação completa em HTML, CSS, JavaScript, React, TypeScript, Python e Flask.",
-    imagem: `${BASE}imagens/certificados/ebac-front-end.png`,
-    pdf: `${BASE}certificados/ebac/ebac-front-end.pdf`,
+      "Certificado de matrícula da formação Full Stack Python da EBAC.",
+    imagem: `${BASE}certificados/thumbs/matricula-ebac.png`,
+    pdf: `${BASE}certificados/ebac/matricula-ebac.pdf`,
   },
 
   {
     id: 2,
-    titulo: "HTML e CSS",
+    titulo: "Introdução à Programação",
     instituicao: "EBAC",
-    categoria: "Front-End",
+    categoria: "Programação",
     descricao:
-      "Fundamentos de HTML5, CSS3, responsividade e Flexbox.",
-    imagem: `${BASE}imagens/certificados/html-css.png`,
-    pdf: `${BASE}certificados/ebac/html-css.pdf`,
+      "Curso introdutório de lógica de programação, algoritmos e fundamentos da programação.",
+    imagem: `${BASE}certificados/thumbs/introducao-programacao.png`,
+    pdf: `${BASE}certificados/ebac/introducao-programacao.pdf`,
   },
 
   {
     id: 3,
-    titulo: "JavaScript",
+    titulo: "Figma Aplicado",
     instituicao: "EBAC",
-    categoria: "Front-End",
+    categoria: "UI/UX Design",
     descricao:
-      "JavaScript moderno (ES6+), DOM, APIs e programação assíncrona.",
-    imagem: `${BASE}imagens/certificados/javascript.png`,
-    pdf: `${BASE}certificados/ebac/javascript.pdf`,
+      "Curso de Figma aplicado ao desenvolvimento Front-End e criação de interfaces.",
+    imagem: `${BASE}certificados/thumbs/figma-aplicado.png`,
+    pdf: `${BASE}certificados/ebac/figma-aplicado.pdf`,
   },
 ];

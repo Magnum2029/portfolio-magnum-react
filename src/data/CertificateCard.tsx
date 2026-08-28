@@ -1,40 +1,67 @@
-import "./CertificateCard.css";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import "./Certificates.css";
+import { certificados } from "../../data/certificados";
 
-type Props = {
-  titulo: string;
-  instituicao: string;
-  categoria: string;
-  descricao: string;
-  imagem: string;
-  pdf: string;
-};
-
-export default function CertificateCard({
-  titulo,
-  instituicao,
-  categoria,
-  descricao,
-  imagem,
-  pdf,
-}: Props) {
+export default function Certificates() {
   return (
-    <div className="certificate-card">
-      <img src={imagem} alt={titulo} />
+    <section className="certificates-page">
+      <div className="container">
 
-      <div className="certificate-content">
-        <span>{instituicao}</span>
+        <span className="section-tag">
+          CURSOS E CERTIFICAÇÕES
+        </span>
 
-        <h3>{titulo}</h3>
+        <h1>Meus Certificados</h1>
 
-        <p>{descricao}</p>
+        <p className="section-description">
+          Certificações obtidas durante minha formação em Desenvolvimento
+          Front-End, Back-End Python, React, Next.js, TypeScript, JavaScript,
+          HTML, CSS, Figma e outras tecnologias.
+        </p>
 
-        <small>{categoria}</small>
+        <div className="certificates-grid">
 
-        <a href={pdf} target="_blank">
-          Visualizar PDF <FaExternalLinkAlt />
-        </a>
+          {certificados.map((certificado) => (
+            <div className="certificate-card" key={certificado.id}>
+
+              <img
+                src={certificado.imagem}
+                alt={certificado.titulo}
+                className="certificate-image"
+              />
+
+              <div className="certificate-content">
+
+                <span className="certificate-school">
+                  {certificado.instituicao}
+                </span>
+
+                <h3>{certificado.titulo}</h3>
+
+                <p>{certificado.descricao}</p>
+
+                <small>{certificado.categoria}</small>
+
+                <div className="certificate-buttons">
+
+                  <a
+                    href={certificado.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
+                    Ver Certificado
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
