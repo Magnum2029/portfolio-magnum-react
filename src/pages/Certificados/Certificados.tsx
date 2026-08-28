@@ -1,34 +1,26 @@
+import { Link } from "react-router-dom";
 import "./Certificados.css";
 import { certificados } from "../../data/certificados";
 
 export default function Certificados() {
   return (
     <section className="certificados-page">
-      <p className="subtitle">Minha formação</p>
+      <p className="subtitle">Minha Formação</p>
 
       <h1>Certificados</h1>
 
       <div className="certificados-grid">
-        {certificados.map((grupo) => (
-          <div className="cert-card" key={grupo.escola}>
-            <h2>{grupo.escola}</h2>
+        {certificados.map((item) => (
+          <div className="cert-card" key={item.escola}>
+            <img src={item.imagem} alt={item.escola} />
 
-            <p>{grupo.descricao}</p>
+            <h2>{item.escola}</h2>
 
-            <ul>
-              {grupo.arquivos.map((cert) => (
-                <li key={cert.nome}>📄 {cert.nome}</li>
-              ))}
-            </ul>
+            <p>{item.descricao}</p>
 
-            <a
-              href={grupo.arquivos[0].pdf}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-certificado"
-            >
+            <Link to={item.rota} className="btn-certificado">
               Ver Certificados
-            </a>
+            </Link>
           </div>
         ))}
       </div>
