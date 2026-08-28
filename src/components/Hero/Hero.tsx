@@ -93,7 +93,7 @@ export default function Hero() {
           <img
             
             
-           src={`${import.meta.env.BASE_URL}imagens/magnum.jpg`}
+           src={`${import.meta.env.BASE_URL}images/magnum.jpg`}
            alt="Magnum Santos"
             className="hero-image"
           />
