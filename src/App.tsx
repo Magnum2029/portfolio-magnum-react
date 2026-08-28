@@ -1,28 +1,27 @@
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Stats from "./components/Stats/Stats";
-import Journey from "./components/Journey/Journey";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Certificates from "./components/Certificates/Certificates";
+import { Routes, Route } from "react-router-dom";
 
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+
+import Home from "./pages/Home/Home";
+import Sobre from "./pages/Sobre/Sobre";
+import Skills from "./pages/Skills/Skills";
+import Projetos from "./pages/Projetos/Projetos";
+import Certificados from "./pages/Certificados/Certificados";
+import Contato from "./pages/Contato/Contato";
 
 export default function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Stats />
-      <About />
-      <Journey />
-      <Skills />
-      <Projects />
-      <Certificates />
-      <Contact />
-      <Footer />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projetos" element={<Projetos />} />
+        <Route path="/certificados" element={<Certificados />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
     </>
   );
 }

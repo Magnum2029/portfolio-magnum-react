@@ -1,91 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
 :root {
-  /* Fonte principal */
-  font-family: "Poppins", sans-serif;
-
-  /* Paleta de cores (igual ao portfólio antigo) */
-  --background: #06070b;
-  --surface: #11131a;
-  --surface-light: #1a2030;
-
-  --text: #ffffff;
-  --text-secondary: #b8c1d1;
-
-  --primary: #5fa8ff;
-  --primary-light: #8fc5ff;
-  --primary-dark: #2c6fdb;
-
-  --border: rgba(95, 168, 255, 0.15);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  font-family: Inter, system-ui, sans-serif;
+  background:#050B16;
+  color:white;
 }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+  scroll-behavior:smooth;
 }
 
-body {
-  min-width: 320px;
-  background: var(--background);
-  color: var(--text);
-  overflow-x: hidden;
+body{
+
+  min-width:320px;
+
+  background:
+    radial-gradient(circle at top right,
+      rgba(37,99,235,.18),
+      transparent 40%),
+    #050B16;
+
+  color:white;
+
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
+a{
+  text-decoration:none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+img{
+  display:block;
+  max-width:100%;
 }
 
-button,
-input,
-textarea {
-  font: inherit;
+.page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+
+  color: white;
 }
 
-/* Container padrão para todas as seções */
-section {
-  width: 100%;
-  padding: 90px 8%;
+.page h1 {
+  font-size: 3rem;
+  margin-bottom: 24px;
 }
 
-/* Títulos */
-h1 {
-  font-size: clamp(2.8rem, 6vw, 4.3rem);
-  line-height: 1.1;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  font-weight: 700;
-}
-
-p {
+.page p {
+  color: #CBD5E1;
   line-height: 1.8;
-  color: var(--text-secondary);
-}
-
-/* Texto pequeno azul */
-.subtitle {
-  color: var(--primary-light);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 0.85rem;
-  margin-bottom: 14px;
-  font-weight: 500;
+  font-size: 1.1rem;
 }

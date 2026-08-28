@@ -1,16 +1,28 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
   return (
     <header className="header">
-      <h2>Magnum Santos</h2>
+      <div className="logo">
+        Magnum<span>.dev</span>
+      </div>
 
       <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
+  <Link to="/">Home</Link>
+
+       <Link to="/sobre">Sobre</Link>
+
+       <Link to="/skills">Skills</Link>
+
+       <Link to="/projetos">Projetos</Link>
+
+       <Link to="/certificados">Certificados</Link>
+
+       <Link to="/contato" className="contato">
+          Contato
+       </Link>
+     </nav>
     </header>
   );
 }

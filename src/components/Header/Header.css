@@ -1,90 +1,72 @@
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  width: 100%;
+  max-width: 1250px;
+  margin: 24px auto 0;
+
+  padding: 18px 34px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 18px 8%;
+  background: rgba(11, 21, 37, 0.95);
 
-  background: linear-gradient(
-    90deg,
-    #1b1d3d 0%,
-    #7c7fad 50%,
-    #284479 100%
-  );
+  border: 1px solid rgba(59,130,246,.25);
+  border-radius: 22px;
 
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(95, 168, 255, 0.12);
 }
 
-/* Logo */
-.header h2 {
+.logo {
   color: white;
   font-size: 1.7rem;
   font-weight: 700;
-  letter-spacing: -0.5px;
 }
 
-.header h2::after {
-  content: ".";
-  color: var(--primary);
+.logo span{
+  color:#3B82F6;
 }
 
-/* Menu */
-.header nav {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+.header nav{
+  display:flex;
+  align-items:center;
+  gap:26px;
 }
 
-.header a {
-  color: #d1d5db;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+.header nav a{
+  color:#CBD5E1;
+  text-decoration:none;
+  font-size:.95rem;
+  transition:.3s;
 }
 
-.header a:hover {
-  color: var(--primary-light);
+.header nav a:hover{
+  color:#60A5FA;
 }
 
-/* Botão Contato */
-.header nav a:last-child {
-  background: rgba(95, 168, 255, 0.18);
-  border: 1px solid rgba(95, 168, 255, 0.35);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 999px;
+.contato{
+  padding:10px 22px;
+  border:1px solid #2563EB;
+  border-radius:999px;
 }
 
-.header nav a:last-child:hover {
-  background: var(--primary);
-  color: #08111f;
+.contato:hover{
+  background:#2563EB;
+  color:white !important;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .header {
-    padding: 16px 20px;
+@media(max-width:900px){
+
+  .header{
+    flex-direction:column;
+    gap:18px;
+    padding:20px;
   }
 
-  .header h2 {
-    font-size: 1.4rem;
+  .header nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
   }
 
-  .header nav {
-    gap: 16px;
-  }
-
-  .header a {
-    font-size: 0.85rem;
-  }
-
-  .header nav a:last-child {
-    padding: 8px 14px;
-  }
 }
