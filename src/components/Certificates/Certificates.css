@@ -1,71 +1,135 @@
-.certificates {
-  padding: 90px 8%;
-  background: #111111;
-  color: white;
+.certificates-page {
+  min-height: 100vh;
+  padding: 120px 7% 80px;
+  background: #030712;
+  color: #fff;
 }
 
-.certificates h2 {
-  text-align: center;
-  font-size: 2.5rem;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-tag {
+  color: #3b82f6;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.certificates-page h1 {
+  font-size: 3rem;
+  margin: 18px 0;
+  font-weight: 700;
+}
+
+.section-description {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 700px;
   margin-bottom: 50px;
 }
 
-.instituicoes {
+.certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 28px;
 }
 
-.instituicao-card {
-  background: #171717;
-  border: 1px solid #27272a;
-  border-radius: 16px;
+.certificate-card {
+  background: linear-gradient(180deg, #07101f, #030712);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  border-color: #2563eb;
+  box-shadow: 0 0 35px rgba(37, 99, 235, 0.18);
+}
+
+.certificate-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.certificate-content {
   padding: 24px;
-  transition: 0.3s;
 }
 
-.instituicao-card:hover {
-  border-color: #0e3447;
-  transform: translateY(-6px);
-}
-
-.icone {
-  font-size: 42px;
-  color: #78b4d1;
-  margin-bottom: 18px;
-}
-
-.instituicao-card h3 {
-  color: #689eb9;
-  margin-bottom: 8px;
-}
-
-.instituicao-card h4 {
-  color: white;
+.certificate-school {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.12);
+  color: #60a5fa;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
   margin-bottom: 14px;
 }
 
-.instituicao-card p {
-  color: #cfcfcf;
-  line-height: 1.6;
+.certificate-content h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
 }
 
-.botao-certificados {
-  margin-top: 50px;
+.certificate-content p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  min-height: 75px;
+}
+
+.certificate-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.btn-primary,
+.btn-outline {
+  flex: 1;
   text-align: center;
-}
-
-.botao-certificados a {
-  display: inline-block;
-  background: #0e3447;
-  color: white;
+  padding: 13px;
+  border-radius: 14px;
   text-decoration: none;
-  padding: 14px 30px;
-  border-radius: 12px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: .3s;
 }
 
-.botao-certificados a:hover {
-  background: #0e3447;
+.btn-primary {
+  background: #1d4ed8;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-outline {
+  border: 1px solid #2563eb;
+  color: #60a5fa;
+}
+
+.btn-outline:hover {
+  background: rgba(37, 99, 235, .15);
+}
+
+@media (max-width:768px){
+
+  .certificates-page{
+    padding:110px 24px 60px;
+  }
+
+  .certificates-page h1{
+    font-size:2.2rem;
+  }
+
+  .certificate-buttons{
+    flex-direction:column;
+  }
+
 }
