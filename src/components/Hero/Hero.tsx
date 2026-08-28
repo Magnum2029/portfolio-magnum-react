@@ -91,9 +91,14 @@ export default function Hero() {
         <div className="photo-circle">
 
           <img
-            src="/images/magnum.jpg"
-            alt="Magnum Santos"
+            
+            
+           src={`${import.meta.env.BASE_URL}imagens/magnum.jpg`}
+           alt="Magnum Santos"
+            className="hero-image"
           />
+          
+          
 
         </div>
 
