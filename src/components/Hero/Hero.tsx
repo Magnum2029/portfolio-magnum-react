@@ -4,6 +4,7 @@ import {
   FaLinkedinIn,
   FaEnvelope
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -49,12 +50,12 @@ export default function Hero() {
         </div>
 
         <div className="hero-buttons">
-          <a href="/projetos" className="btn-primary">
+          <Link to="/projetos" className="btn-primary">
             Ver Projetos
-          </a>
+          </Link>
 
           <a
-            href="/cv/CV-Magnum.pdf"
+            href={`${import.meta.env.BASE_URL}cv/CV-Magnum.pdf`}
             target="_blank"
             className="btn-outline"
           >
