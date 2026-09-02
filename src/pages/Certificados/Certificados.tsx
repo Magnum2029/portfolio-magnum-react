@@ -1,29 +1,35 @@
-import { Link } from "react-router-dom";
 import "./Certificados.css";
 import { certificados } from "../../data/certificados";
 
 export default function Certificados() {
   return (
-    <section className="certificados-page">
-      <p className="subtitle">Minha Formação</p>
+    <main className="certificados-page">
+      <div className="certificados-container">
+        <p className="subtitle">Minhas formações e certificados</p>
+        <h1>Todos os meus certificados</h1>
+        <p className="certificados-resumo">
+          Desenvolvedor Front-End <span aria-hidden="true">•</span>{" "}
+          Desenvolvedor Back-End <span aria-hidden="true">•</span>{" "}
+          Estudonauta: HTML5, CSS3 e JavaScript
+        </p>
 
-      <h1>Certificados</h1>
-
-      <div className="certificados-grid">
-        {certificados.map((item) => (
-          <div className="cert-card" key={item.escola}>
-            <img src={item.imagem} alt={item.escola} />
-
-            <h2>{item.escola}</h2>
-
-            <p>{item.descricao}</p>
-
-            <Link to={item.rota} className="btn-certificado">
-              Ver Certificados
-            </Link>
-          </div>
-        ))}
+        <div className="certificados-grid">
+          {certificados.map((certificado) => (
+            <article className="cert-card" key={certificado.id}>
+              <a href={certificado.pdf} target="_blank" rel="noopener noreferrer" aria-label={`Abrir certificado ${certificado.titulo}`}>
+                <img src={certificado.imagem} alt={`Certificado ${certificado.titulo}`} />
+              </a>
+              <div className="cert-card-content">
+                <span>{certificado.instituicao}</span>
+                <h2>{certificado.titulo}</h2>
+                <a href={certificado.pdf} target="_blank" rel="noopener noreferrer" className="btn-certificado">
+                  Ver certificado
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
-    </section>
+    </main>
   );
 }
