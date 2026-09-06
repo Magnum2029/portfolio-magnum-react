@@ -15,4 +15,8 @@ export const certificados: Certificado[] = [
   { id: 4, titulo: "JavaScript", instituicao: "Estudonauta", imagem: `${BASE}certificados/thumbs/javascript.png`, pdf: `${BASE}certificados/javascript.pdf` },
   { id: 5, titulo: "Figma Aplicado", instituicao: "EBAC", imagem: `${BASE}certificados/thumbs/figma-aplicado.png`, pdf: `${BASE}certificados/ebac/figma-aplicado.pdf.pdf` },
   { id: 6, titulo: "Introdução à Programação", instituicao: "EBAC", imagem: `${BASE}certificados/thumbs/introducao-programacao.png`, pdf: `${BASE}certificados/ebac/introducao-programacao.pdf.pdf` },
+  { id: 7, titulo: "PHP com MySQL — Módulo 00: Primeiros Passos", instituicao: "Estudonauta", imagem: `${BASE}certificados/thumbs/desenvolvedor-back-end.png`, pdf: `${BASE}certificados/php00.pdf` },
+  { id: 8, titulo: "PHP com MySQL — Módulo 01: Criando um CRUD", instituicao: "Estudonauta", imagem: `${BASE}certificados/thumbs/desenvolvedor-back-end.png`, pdf: `${BASE}certificados/php01.pdf` },
+  { id: 9, titulo: "PHP com MySQL — Módulo 02: Segurança e Níveis de Acesso", instituicao: "Estudonauta", imagem: `${BASE}certificados/thumbs/desenvolvedor-back-end.png`, pdf: `${BASE}certificados/php02.pdf` },
+  { id: 10, titulo: "HTML5 + CSS3 — Módulo 2", instituicao: "Estudonauta", imagem: `${BASE}certificados/thumbs/html-css.png`, pdf: `${BASE}certificados/html-css2.pdf` },
 ];
