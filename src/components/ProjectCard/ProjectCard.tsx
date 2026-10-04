@@ -8,7 +8,6 @@ type Props = {
 export default function ProjectCard({ projeto }: Props) {
   return (
     <div className="project-card">
-      {/* Imagem do projeto */}
       <img
         src={projeto.imagem}
         alt={projeto.titulo}
@@ -29,13 +28,23 @@ export default function ProjectCard({ projeto }: Props) {
         </div>
 
         <div className="links">
-          <a href={projeto.github} target="_blank" rel="noreferrer">
-            GitHub
+          <a
+            href={projeto.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Abrir GitHub do projeto ${projeto.titulo}`}
+          >
+            Git
           </a>
 
           {projeto.demo && (
-            <a href={projeto.demo} target="_blank" rel="noreferrer">
-              Demonstração
+            <a
+              href={projeto.demo}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Abrir demonstração do projeto ${projeto.titulo}`}
+            >
+              Demo
             </a>
           )}
         </div>

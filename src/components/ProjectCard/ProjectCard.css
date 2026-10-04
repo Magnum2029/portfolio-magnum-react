@@ -61,30 +61,31 @@
 
 .links {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .links a {
-  flex: 1;
-  text-align: center;
-  padding: 12px;
-  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 58px;
+  padding: 6px 14px;
+  border: 1px solid #2f7ca3;
+  border-radius: 20px;
   text-decoration: none;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: white;
+  color: #dce4e7;
   background: #0e3447;
-  transition: 0.3s;
+  transition: 0.2s ease;
 }
 
 .links a:hover {
   background: #6d93a8;
-}
-
-.links a:last-child {
-  border: 1px solid #e8eef1;
-  color: #d7dde0;
-}
-
-.links a:hover {
-  opacity: 0.9;
+  border-color: #6d93a8;
+  color: white;
+  transform: translateY(-1px);
 }

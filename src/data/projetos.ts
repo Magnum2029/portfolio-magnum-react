@@ -14,13 +14,13 @@ export type Projeto = {
 export const projetos: Projeto[] = [
   {
     id: 1,
-    titulo: "Luxury Wheels API",
+    titulo: "Luxury Wheels",
     categoria: "Python",
     descricao:
-      "API REST para gerenciamento de uma locadora de carros de luxo.",
-    tecnologias: ["Python", "Flask", "SQLite"],
-    github: "https://github.com/Magnum2029/luxury-wheels",
-    demo: "https://github.com/Magnum2029/luxury_wheels",
+    "Sistema desktop para gestão de veículos, clientes, reservas e pagamentos.",
+    tecnologias: ["Python", "Tkinter", "SQLite"],
+    github: "https://github.com/Magnum2029/luxury_wheels",
+    demo: "",
     imagem: `${BASE}images/Projeto/luxury-wheels.png`,
   },
 
@@ -31,7 +31,7 @@ export const projetos: Projeto[] = [
     descricao: "Projeto em React para destinos turísticos.",
     tecnologias: ["React", "TypeScript"],
     github: "https://github.com/Magnum2029/portal-viagens",
-    demo: "https://portal-viagens.vercel.app",
+    demo: "",
     imagem: `${BASE}images/Projeto/portal-viagens.png`,
   },
 
