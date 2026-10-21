@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="status">
          <span className="bolinha"></span>
-          Disponível para oportunidades · Portimão, Portugal
+          Disponível para oportunidades ·
       </div>
 
         <h1>
@@ -92,14 +92,16 @@ export default function Hero() {
         <div className="photo-circle">
 
           <img
-            
-            
-           src={`${import.meta.env.BASE_URL}images/Foto-Magnum.png`}
-           alt="Magnum Santos"
-            className="hero-image"
-            width="600"
-            height="800"
-          />
+             src={`${import.meta.env.BASE_URL}images/Foto-Magnum.png`}
+             alt="Magnum Santos"
+             className="hero-image"
+             width="600"
+             height="800"
+             style={{
+              objectFit: "cover",
+              objectPosition: "center 25%",
+  }}
+/>
           
           
 

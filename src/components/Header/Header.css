@@ -2,71 +2,76 @@
   width: 100%;
   max-width: 1250px;
   margin: 24px auto 0;
-
   padding: 18px 34px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(11, 21, 37, 0.95);
-
-  border: 1px solid rgba(59,130,246,.25);
+  background: rgba(21, 20, 19, 0.95);
+  border: 1px solid rgba(184, 138, 96, 0.3);
   border-radius: 22px;
 
   backdrop-filter: blur(12px);
 }
 
 .logo {
-  color: white;
+  color: #f2f0ed;
   font-size: 1.7rem;
   font-weight: 700;
 }
 
-.logo span{
-  color:#3B82F6;
+.logo span {
+  color: #c99b71;
 }
 
-.header nav{
-  display:flex;
-  align-items:center;
-  gap:26px;
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
 }
 
-.header nav a{
-  color:#CBD5E1;
-  text-decoration:none;
-  font-size:.95rem;
-  transition:.3s;
+.header nav a {
+  color: #b8b3ad;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
 }
 
-.header nav a:hover{
-  color:#60A5FA;
+.header nav a:hover,
+.header nav a[aria-current="page"] {
+  color: #d8b493;
 }
 
-.contato{
-  padding:10px 22px;
-  border:1px solid #2563EB;
-  border-radius:999px;
+.header .contato {
+  padding: 10px 22px;
+  border: 1px solid #b88a60;
+  border-radius: 999px;
+  color: #f2f0ed;
 }
 
-.contato:hover{
-  background:#2563EB;
-  color:white !important;
+.header .contato:hover {
+  background: #b88a60;
+  color: #0d0d0d;
 }
 
-@media(max-width:900px){
+.header a:focus-visible {
+  outline: 3px solid #d8b493;
+  outline-offset: 5px;
+}
 
-  .header{
-    flex-direction:column;
-    gap:18px;
-    padding:20px;
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
   }
 
-  .header nav{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:16px;
+  .header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
-
 }

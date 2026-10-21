@@ -1,11 +1,11 @@
 .skills {
   padding: 90px 8%;
-  background: #0a0a0a;
-  color: #ffffff;
+  background: #0d0d0d;
+  color: #f2f0ed;
 }
 
-.subtitle {
-  color: #519cc2;
+.skills .subtitle {
+  color: #c99b71;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -26,8 +26,8 @@
 }
 
 .skill-card {
-  background: #171717;
-  border: 1px solid #27272a;
+  background: #1c1c1c;
+  border: 1px solid #78614d;
   border-radius: 16px;
   padding: 28px 20px;
   min-height: 170px;
@@ -37,13 +37,16 @@
   align-items: center;
   justify-content: center;
 
-  transition: 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
   transform: translateY(-6px);
-  border-color: #0e3447;
-  box-shadow: 0 0 20px rgba(0, 168, 255, 0.25);
+  border-color: #b88a60;
+  box-shadow: 0 0 20px rgba(184, 138, 96, 0.18);
 }
 
 .skill-icon {
@@ -52,20 +55,28 @@
 }
 
 .skill-card h3 {
-  color: white;
+  color: #f2f0ed;
   font-size: 1rem;
 }
 
-/* Cores dos ícones */
+/* Ícones na paleta bronze e cinza quente */
 
-.html { color: #E34F26; }
-.css { color: #90a7b8; }
-.javascript { color: #F7DF1E; }
-.react { color: #61DAFB; }
-.typescript { color: #3178C6; }
-.next { color: #FFFFFF; }
-.python { color: #3776AB; }
-.github { color: #FFFFFF; }
+.skills .html,
+.skills .javascript,
+.skills .typescript,
+.skills .python {
+  color: #d8b493;
+}
+
+.skills .css,
+.skills .react {
+  color: #b8b3ad;
+}
+
+.skills .next,
+.skills .github {
+  color: #f2f0ed;
+}
 
 @media (max-width: 768px) {
   .skills-grid {

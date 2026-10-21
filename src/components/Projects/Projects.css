@@ -1,45 +1,53 @@
-.projects{
-  padding:90px 8%;
-  background:#111111;
+.projects {
+  padding: 90px 8%;
+  background: #0d0d0d;
+  color: #f2f0ed;
 }
 
-.projects h2{
-  color:white;
-  text-align:center;
-  font-size:2.5rem;
-  margin-bottom:40px;
+.projects h2 {
+  color: #f2f0ed;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 
-.filtros{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-bottom:45px;
+.filtros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 45px;
 }
 
-.filtros button{
-  padding:10px 22px;
-  border-radius:25px;
-  border:none;
-  cursor:pointer;
+.filtros button {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: 1px solid #78614d;
+  cursor: pointer;
 
-  background:#27272a;
-  color:white;
+  background: #1c1c1c;
+  color: #f2f0ed;
 
-  transition:.3s;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
-.filtros button:hover{
-  background:#0e3447;
+.filtros button:hover,
+.filtros button.ativo {
+  background: #b88a60;
+  border-color: #b88a60;
+  color: #0d0d0d;
 }
 
-.filtros .ativo{
-  background:#0e3447;
+.filtros button:focus-visible {
+  outline: 3px solid #d8b493;
+  outline-offset: 4px;
 }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:30px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 30px;
 }

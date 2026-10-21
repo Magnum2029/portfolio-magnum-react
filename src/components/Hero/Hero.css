@@ -317,3 +317,95 @@ height:260px;
 
   box-shadow: 0 0 10px #22c55e;
 }
+
+/* Tema preto, cinza quente e bronze */
+
+.hero {
+  background: linear-gradient(180deg, #151413, #0d0d0d);
+  border-color: rgba(184, 138, 96, 0.3);
+}
+
+.hero::before {
+  background: radial-gradient(circle, #b88a60 0%, transparent 70%);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.hero .profissao {
+  color: #c99b71;
+}
+
+.hero h1 {
+  color: #f2f0ed;
+}
+
+.hero h2,
+.hero p {
+  color: #b8b3ad;
+}
+
+.hero .tecnologias span {
+  background: #1c1c1c;
+  border-color: #78614d;
+  color: #f2f0ed;
+}
+
+.hero .btn-primary {
+  background: #b88a60;
+  color: #0d0d0d;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background: #c99b71;
+  box-shadow: 0 10px 25px rgba(184, 138, 96, 0.2);
+}
+
+.hero .btn-outline {
+  border-color: #b88a60;
+  color: #f2f0ed;
+}
+
+.hero .btn-outline:hover {
+  background: #b88a60;
+  color: #0d0d0d;
+  box-shadow: 0 10px 25px rgba(184, 138, 96, 0.2);
+}
+
+.hero .socials a {
+  background: #1c1c1c;
+  border-color: #78614d;
+  color: #f2f0ed;
+}
+
+.hero .socials a:hover {
+  background: #b88a60;
+  color: #0d0d0d;
+  box-shadow: 0 0 20px rgba(184, 138, 96, 0.25);
+}
+
+.hero .photo-circle {
+  background: #1c1c1c;
+  box-shadow:
+    0 0 22px rgba(184, 138, 96, 0.18),
+    0 0 60px rgba(184, 138, 96, 0.08);
+}
+
+.hero .status {
+  background: rgba(184, 138, 96, 0.08);
+  border-color: rgba(184, 138, 96, 0.35);
+  color: #d8b493;
+}
+
+.hero .bolinha {
+  background: #c99b71;
+  box-shadow: 0 0 10px rgba(201, 155, 113, 0.6);
+}
+
+.hero a:focus-visible {
+  outline: 3px solid #d8b493;
+  outline-offset: 5px;
+}
