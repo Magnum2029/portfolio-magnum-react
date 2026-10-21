@@ -55,7 +55,7 @@ export default function Hero() {
           </Link>
 
           <a
-            href={`${import.meta.env.BASE_URL}cv/CV-Magnum.pdf`}
+            href={`${import.meta.env.BASE_URL}cv/CV-Magnum-Brasil.pdf`}
             target="_blank"
             className="btn-outline"
           >
@@ -94,7 +94,7 @@ export default function Hero() {
           <img
             
             
-           src={`${import.meta.env.BASE_URL}images/magnum.webp`}
+           src={`${import.meta.env.BASE_URL}images/Foto-Magnum.png`}
            alt="Magnum Santos"
             className="hero-image"
             width="600"
